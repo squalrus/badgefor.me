@@ -5,16 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Badge For Me</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5RX3SZPR5Z"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-5RX3SZPR5Z');
-    </script>
   </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5RX3SZPR5Z"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-5RX3SZPR5Z');
+  </script>
   <body>
     <header class="header">
       <div class="header-content">
@@ -286,7 +288,9 @@
           <div class="faq-item">
             <h3 class="faq-question">What exactly does BadgeFor.Me do?</h3>
             <div class="faq-answer">
-              <p>We collect your physical work badge, drive it to your workplace, and scan it on your behalf. That's it. No fake activity, no digital trickery, no Slack messages typed by robots. Just a highly trained human performing a single beep.</p>
+              <p>
+                We collect your physical work badge, drive it to your workplace, and scan it on your behalf. That's it. No fake activity, no digital trickery, no Slack messages typed by robots. Just a highly trained human performing a single beep.
+              </p>
             </div>
           </div>
 
@@ -301,20 +305,23 @@
             <h3 class="faq-question">Who are your drivers?</h3>
             <div class="faq-answer">
               <p>Our drivers are elite professionals trained in:</p>
-            <ul>
-              <li>Badge handling</li>
-              <li>Traffic navigation</li>
-              <li>Avoiding eye contact with building security</li>
-              <li>Maintaining plausible professionalism at all times</li>
-            </ul>
-            <p>They are the backbone of our operation and the heroes your commute never deserved.</p>
+              <ul>
+                <li>Badge handling</li>
+                <li>Traffic navigation</li>
+                <li>Avoiding eye contact with building security</li>
+                <li>Maintaining plausible professionalism at all times</li>
+              </ul>
+              <p>They are the backbone of our operation and the heroes your commute never deserved.</p>
             </div>
           </div>
 
           <div class="faq-item">
             <h3 class="faq-question">How do you decide when to scan my badge?</h3>
             <div class="faq-answer">
-              <p>Our AI systems—PresenceGPT™ and BadgeScanAI™—analyze building access patterns, historical scan times, and traffic conditions to determine a natural, human‑like scan window.<br><strong>No two scans are ever identical.</strong><br>Just like real attendance.</p>
+              <p>
+                Our AI systems—PresenceGPT™ and BadgeScanAI™—analyze building access patterns, historical scan times, and traffic conditions to determine a natural, human‑like scan window.<br /><strong>No two scans are ever identical.</strong
+                ><br />Just like real attendance.
+              </p>
             </div>
           </div>
 
@@ -344,14 +351,17 @@
           <div class="faq-item">
             <h3 class="faq-question">Is this legal?</h3>
             <div class="faq-answer">
-              <p>We operate strictly within the boundaries of satire, comedy, and conceptual art.<br>Also, we never impersonate you digitally or access your employer's systems.<br>We just scan a badge.<br>A badge that beeps.<br>A beep that means nothing more than "a badge was scanned."</p>
+              <p>
+                We operate strictly within the boundaries of satire, comedy, and conceptual art.<br />Also, we never impersonate you digitally or access your employer's systems.<br />We just scan a badge.<br />A badge that beeps.<br />A beep that
+                means nothing more than "a badge was scanned."
+              </p>
             </div>
           </div>
 
           <div class="faq-item">
             <h3 class="faq-question">What if my employer asks why I wasn't physically present?</h3>
             <div class="faq-answer">
-              <p>We recommend responding with confidence, ambiguity, or a question of your own.<br>Examples include:</p>
+              <p>We recommend responding with confidence, ambiguity, or a question of your own.<br />Examples include:</p>
               <ul>
                 <li>"Interesting."</li>
                 <li>"What makes you say that."</li>
@@ -364,7 +374,7 @@
           <div class="faq-item">
             <h3 class="faq-question">What happens if my badge is lost or damaged?</h3>
             <div class="faq-answer">
-              <p>We will return a badge‑shaped object to you.<br>It may or may not be your original badge.<br>It will definitely be badge‑shaped.</p>
+              <p>We will return a badge‑shaped object to you.<br />It may or may not be your original badge.<br />It will definitely be badge‑shaped.</p>
             </div>
           </div>
 
@@ -378,7 +388,7 @@
           <div class="faq-item">
             <h3 class="faq-question">Do you offer corporate plans?</h3>
             <div class="faq-answer">
-              <p>We are exploring enterprise solutions for teams, departments, and entire divisions who wish to appear present in unison.<br>This is known internally as "The Green Wall."</p>
+              <p>We are exploring enterprise solutions for teams, departments, and entire divisions who wish to appear present in unison.<br />This is known internally as "The Green Wall."</p>
             </div>
           </div>
 
@@ -386,7 +396,11 @@
             <h3 class="faq-question">Is this… satire?</h3>
             <div class="faq-answer">
               <p><strong>Yes.</strong></p>
-              <p>BadgeFor.Me is a satirical project that parodies corporate attendance culture, presenteeism, and the absurdity of modern workplace expectations.<br><strong>No actual badge scanning services are provided.<br>No fraud is committed.<br>Only jokes are made.</strong></p>
+              <p>
+                BadgeFor.Me is a satirical project that parodies corporate attendance culture, presenteeism, and the absurdity of modern workplace expectations.<br /><strong
+                  >No actual badge scanning services are provided.<br />No fraud is committed.<br />Only jokes are made.</strong
+                >
+              </p>
             </div>
           </div>
         </div>
@@ -401,7 +415,7 @@
       // FAQ expand/collapse functionality
       const faqQuestions = document.querySelectorAll('.faq-question');
 
-      faqQuestions.forEach(question => {
+      faqQuestions.forEach((question) => {
         question.addEventListener('click', () => {
           const faqItem = question.closest('.faq-item');
           faqItem.classList.toggle('active');
