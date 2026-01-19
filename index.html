@@ -7,16 +7,29 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <header class="header">
+      <div class="header-content">
+        <div class="logo">badgefor.me</div>
+      </div>
+    </header>
     <main>
       <!-- Hero Section -->
       <section class="hero">
-        <h1>badgefor.me</h1>
-        <h2>AI‑powered attendance. Zero‑powered commuting.</h2>
-        <p class="hero-description">BadgeFor.Me uses cutting‑edge artificial intelligence to simulate your workplace presence with unprecedented accuracy, efficiency, and disregard for practicality.</p>
-        <p>Our proprietary PresenceGPT™ model analyzes millions of data points — including badge logs, weather patterns, and your manager's mood — to determine the perfect moment to scan your badge.</p>
-        <p>
-          <strong>Because why should you go to the office when an algorithm can pretend you did?</strong>
-        </p>
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Work from home. Look like you didn't.</h1>
+            <p class="hero-description">
+              At BadgeFor.Me, we believe your physical presence shouldn't get in the way of your productivity. That's why our team of highly trained "Attendance Engineers" drives to your office, scans your badge, and ensures you appear exactly where
+              your employer wants you—without you actually being there.
+            </p>
+            <p>
+              <strong>Because in 2026, the only thing more outdated than the office is honesty about being in it.</strong>
+            </p>
+          </div>
+          <div class="hero-image">
+            <img src="assets/images/hero-badge-scan.jpg" alt="ID badge being scanned at access reader" />
+          </div>
+        </div>
       </section>
 
       <!-- How It Works Section -->
@@ -24,24 +37,142 @@
         <h2>How It Works</h2>
         <div class="steps">
           <div class="step">
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+            </div>
             <h3>You stay home.</h3>
-            <p>Our AI models confirm this is the optimal choice 99.7% of the time.</p>
+            <p>Preferably in pajamas.</p>
           </div>
           <div class="step">
-            <h3>We pick up your badge.</h3>
-            <p>BadgeScanAI™ authenticates your badge using a neural network trained on 14 images.</p>
-          </div>
-          <div class="step">
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="1"></circle>
+                <path d="M12 2v6m0 4v6"></path>
+                <path d="M4.22 4.22l4.24 4.24m5.08 5.08l4.24 4.24"></path>
+                <path d="M2 12h6m4 0h6"></path>
+                <path d="M4.22 19.78l4.24-4.24m5.08-5.08l4.24-4.24"></path>
+              </svg>
+            </div>
             <h3>We drive to your office.</h3>
-            <p>CommuteAvoidanceML™ ensures you never have to.</p>
+            <p>In a fleet of eco‑friendly, compliance‑adjacent vehicles.</p>
           </div>
           <div class="step">
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+            </div>
             <h3>We scan your badge.</h3>
-            <p>GeoFaux™ triangulates your "presence" with sub‑par accuracy.</p>
+            <p>With precision, care, and a deep respect for satire.</p>
           </div>
           <div class="step">
-            <h3>Your employer's dashboard updates.</h3>
-            <p>The Dashboard Optimizer™ ensures everything looks delightfully green.</p>
+            <div class="step-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+              </svg>
+            </div>
+            <h3>Your dashboard turns green.</h3>
+            <p>And your manager nods approvingly at a spreadsheet.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section class="pricing">
+        <h2>Pricing</h2>
+        <div class="pricing-card">
+          <p class="price">$20/week</p>
+          <p class="pricing-description">Cheaper than gas. Cheaper than parking. Cheaper than pretending.</p>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="features">
+        <h2>Our Technology</h2>
+        <div class="features-grid">
+          <div class="feature">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path>
+              </svg>
+            </div>
+            <h3>1. PresenceGPT™</h3>
+            <p>A proprietary large language model trained exclusively on:</p>
+            <ul>
+              <li>HR attendance policies</li>
+              <li>Passive‑aggressive manager emails</li>
+              <li>Corporate Slack messages sent after 5 PM</li>
+            </ul>
+            <p>It predicts the optimal time to "appear" in the office.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                <circle cx="12" cy="13" r="4"></circle>
+              </svg>
+            </div>
+            <h3>2. BadgeScanAI™</h3>
+            <p>A computer‑vision system that:</p>
+            <ul>
+              <li>Identifies your badge</li>
+              <li>Identifies the badge reader</li>
+              <li>Identifies the optimal angle for plausible scanning</li>
+              <li>Does absolutely nothing else</li>
+            </ul>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 11H3v2h6v-2zm0-4H3v2h6V7zm6 0v2h6V7h-6zm0 4v2h6v-2h-6zM9 3H3v2h6V3zm6 0v2h6V3h-6z"></path>
+              </svg>
+            </div>
+            <h3>3. CommuteAvoidanceML™</h3>
+            <p>A machine‑learning model that:</p>
+            <ul>
+              <li>Calculates the probability you'll get caught in traffic</li>
+              <li>Then recommends you stay home</li>
+              <li>Which you were going to do anyway</li>
+            </ul>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <h3>4. GeoFaux™ Location Engine</h3>
+            <p>Uses advanced geospatial hallucination to make your employer's dashboard think you're within 10 feet of the office.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3>5. EthicsBender™</h3>
+            <p>A neural network that bends ethical boundaries just enough to make you uncomfortable, but not enough to be actionable.</p>
+          </div>
+          <div class="feature">
+            <div class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="9" y1="9" x2="15" y2="9"></line>
+                <line x1="9" y1="15" x2="15" y2="15"></line>
+              </svg>
+            </div>
+            <h3>6. The Dashboard Optimizer</h3>
+            <p>An AI that ensures your manager's attendance dashboard stays green by:</p>
+            <ul>
+              <li>Randomly generating "office‑like" activity</li>
+              <li>Simulating badge pings</li>
+              <li>Occasionally sending a fake "Good morning team" message</li>
+            </ul>
           </div>
         </div>
       </section>
