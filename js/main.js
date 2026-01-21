@@ -1,5 +1,12 @@
 // Main JavaScript file
 document.addEventListener('DOMContentLoaded', function () {
-  console.log('Page loaded successfully');
-  // Add your JavaScript code here
+  // FAQ expand/collapse functionality
+  const faqQuestions = document.querySelectorAll('.faq-question');
+
+  faqQuestions.forEach((question) => {
+    question.addEventListener('click', () => {
+      const faqItem = question.closest('.faq-item');
+      faqItem.classList.toggle('active');
+    });
+  });
 });
