@@ -184,8 +184,10 @@ section h2 {
 
 .steps {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .step {
@@ -515,8 +517,10 @@ section h2 {
 
 .faq-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  grid-template-columns: 1fr;
   gap: 2.5rem;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .faq-item {
@@ -657,6 +661,10 @@ footer p {
     padding: 1.75rem;
   }
 
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
   .features-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
@@ -681,7 +689,6 @@ footer p {
   }
 
   .faq-grid {
-    grid-template-columns: 1fr;
     gap: 1.5rem;
   }
 
