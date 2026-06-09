@@ -564,4 +564,6 @@ footer {
   color: var(--ink-3);
   font-family: var(--mono);
 }
+.foot-bottom a { color: var(--ink-2); text-decoration: none; transition: .15s; }
+.foot-bottom a:hover { color: var(--accent-ink); }
 @media (max-width: 760px) { .foot-grid { grid-template-columns: 1fr; gap: 32px; } }
