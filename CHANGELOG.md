@@ -2,6 +2,12 @@
 
 User-visible changes, newest first. Follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format and [semver](https://semver.org/) versioning.
 
+## [0.2.0] — 2026-06-09
+
+### Added
+
+- **Footer attribution.** Added "Built by Chad Schulz" credit in the footer bottom bar, linking to [squalr.us](https://squalr.us). (`index.html`, `css/styles.css`)
+
 ## [0.1.1] — 2026-06-09
 
 ### Fixed
