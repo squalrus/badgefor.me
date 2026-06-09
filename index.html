@@ -3,436 +3,503 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Badge For Me</title>
+    <title>BadgeFor.Me — Presence-as-a-Service™ for Remote Workers</title>
+    <meta name="description" content="BadgeFor.Me sends certified Attendance Engineers to scan your badge while you work from home. The only RTO compliance solution built for the modern remote worker. (This is satire.)" />
+    <meta name="keywords" content="work from home, return to office, RTO mandate, badge scanning, remote work, office attendance" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://badgefor.me" />
+    <meta property="og:title" content="BadgeFor.Me — Presence-as-a-Service™" />
+    <meta property="og:description" content="Your badge goes to the office. You don't. Professional attendance compliance for remote workers navigating RTO mandates." />
+    <meta property="og:image" content="https://badgefor.me/assets/images/hero-badge-scan.jpg" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="BadgeFor.Me — Presence-as-a-Service™" />
+    <meta name="twitter:description" content="Your badge goes to the office. You don't. Professional attendance compliance for remote workers navigating RTO mandates." />
+    <meta name="twitter:image" content="https://badgefor.me/assets/images/hero-badge-scan.jpg" />
+
     <link rel="stylesheet" href="css/styles.css" />
   </head>
+
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-5RX3SZPR5Z"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-5RX3SZPR5Z');
   </script>
+
   <body>
-    <header class="header">
-      <div class="header-content">
-        <div class="logo">badgefor.me</div>
-        <a href="#pricing" class="cta-button header-cta">Get Started</a>
+
+    <!-- NAV -->
+    <header class="nav">
+      <div class="wrap nav-in">
+        <a class="brand" href="#top">
+          <span class="mark">
+            <svg viewBox="0 0 24 24" fill="none">
+              <rect x="6" y="3" width="12" height="16" rx="2" stroke="#fff" stroke-width="2"/>
+              <path d="M9 8h6M12 13.5v2" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </span>
+          BadgeFor.Me
+        </a>
+        <nav class="nav-links">
+          <a href="#how">How it works</a>
+          <a href="#platform">Platform</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <div class="nav-cta">
+          <a class="btn btn-ghost" href="#">Sign in</a>
+          <a class="btn btn-primary" href="#pricing">Get started</a>
+        </div>
       </div>
     </header>
-    <main>
-      <!-- Hero Section -->
+
+    <main id="top">
+
+      <!-- HERO -->
       <section class="hero">
-        <div class="hero-content">
-          <div class="hero-text">
-            <h1>Work from home. Look like you didn't.</h1>
-            <p class="hero-description">
-              At BadgeFor.Me, we believe your physical presence shouldn't get in the way of your productivity. That's why our team of highly trained "Attendance Engineers" drives to your office, scans your badge, and ensures you appear exactly where
-              your employer wants you—without you actually being there.
-            </p>
-            <p>
-              <strong>Because in 2026, the only thing more outdated than the office is honesty about being in it.</strong>
-            </p>
-            <a href="#pricing" class="cta-button hero-cta">Get Started</a>
+        <div class="wrap hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow">Presence-as-a-Service™</span>
+            <h1>Work from home.<br><span class="muted">Look like you didn't.</span></h1>
+            <p class="lead">BadgeFor.Me is a full-service attendance compliance platform for remote workers navigating return-to-office mandates. Our certified Attendance Engineers™ retrieve your badge, drive to your workplace, and execute a precision badge scan at statistically natural intervals.</p>
+            <p class="bold">Your employer's system registers a compliant employee. You register nothing, because you're home.</p>
+            <div class="hero-cta">
+              <a class="btn btn-primary btn-lg" href="#pricing">Get started</a>
+              <a class="btn btn-ghost btn-lg" href="#how">See how it works</a>
+            </div>
+            <div class="hero-note">
+              <span class="dot"></span>
+              99.97% scan-acknowledgement rate · SatireSafe™ certified
+            </div>
+          </div>
+
+          <!-- Attendance console mockup -->
+          <div class="console reveal">
+            <div class="console-bar">
+              <span class="dots"><i></i><i></i><i></i></span>
+              <span class="title">attendance-console · scan log</span>
+              <span class="stat"><span class="pulse"></span>Compliant</span>
+            </div>
+            <div class="console-body">
+              <div class="crow">
+                <span class="ts">08:51:04</span>
+                <span class="loc">North Tower · Lobby<small>READER #A2-014</small></span>
+                <span class="pill"><i></i>Present</span>
+                <span class="eng">Eng. M. Okafor</span>
+              </div>
+              <div class="crow">
+                <span class="ts">12:58:41</span>
+                <span class="loc">North Tower · Café<small>READER #C1-006</small></span>
+                <span class="pill"><i></i>Present</span>
+                <span class="eng">Eng. M. Okafor</span>
+              </div>
+              <div class="crow">
+                <span class="ts">13:46:22</span>
+                <span class="loc">North Tower · Lobby<small>READER #A2-014</small></span>
+                <span class="pill"><i></i>Present</span>
+                <span class="eng">Eng. M. Okafor</span>
+              </div>
+              <div class="crow">
+                <span class="ts">17:33:09</span>
+                <span class="loc">North Tower · Lobby<small>READER #A2-014</small></span>
+                <span class="pill"><i></i>Present</span>
+                <span class="eng">Eng. M. Okafor</span>
+              </div>
+            </div>
+            <div class="console-foot">
+              <span>4 scans today · 0 anomalies flagged</span>
+              <span>you: at home</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- How It Works Section -->
-      <section class="how-it-works">
-        <h2>How It Works</h2>
-        <div class="steps">
-          <div class="step">
-            <div class="step-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="3" y="4" width="18" height="14" rx="2" ry="2"></rect>
-                <circle cx="12" cy="12" r="2.5"></circle>
-                <circle cx="18" cy="8" r="1.5"></circle>
-              </svg>
-            </div>
-            <h3>We collect your badge.</h3>
-            <p>Our highly trained drivers retrieve your badge with professionalism, discretion, and a firm handshake if requested.</p>
-          </div>
-          <div class="step">
-            <div class="step-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M18 8h1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-10a2 2 0 0 1 2-2h1M9 4h6M9 4c0-1 .9-2 2-2h2c1.1 0 2 1 2 2"></path>
-                <circle cx="6.5" cy="16" r="1.5"></circle>
-                <circle cx="17.5" cy="16" r="1.5"></circle>
-              </svg>
-            </div>
-            <h3>We drive to your workplace.</h3>
-            <p>Using AI-optimized routing, our fleet navigates traffic, construction, and existential dread to reach your office efficiently.</p>
-          </div>
-          <div class="step">
-            <div class="step-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M3 9h18M3 13h18M3 17h18M6 3v6M10 3v6M14 3v6M18 3v6"></path>
-                <rect x="2" y="2" width="20" height="20" rx="2"></rect>
-              </svg>
-            </div>
-            <h3>We scan your badge.</h3>
-            <p>At randomized times and locations—selected by our proprietary BadgeScanAI™—we perform a precise, compliant badge scan. No extra signals. No fake activity. Just the beep.</p>
-          </div>
-          <div class="step">
-            <div class="step-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                <polyline points="9 22 9 12 15 12 15 22"></polyline>
-              </svg>
-            </div>
-            <h3>You stay home.</h3>
-            <p>Your badge goes to work. You do not. Everyone wins, except the concept of presence.</p>
+      <!-- TRUST BAR -->
+      <section class="trust">
+        <div class="wrap">
+          <p>Compatible with the badge readers at companies you would rather not name</p>
+          <div class="logos reveal">
+            <span><span class="g"></span>Meridian</span>
+            <span><span class="g"></span>NorthOak</span>
+            <span><span class="g"></span>Vantage&nbsp;Group</span>
+            <span><span class="g"></span>Halcyon</span>
+            <span><span class="g"></span>Brightline</span>
+            <span><span class="g"></span>Continuum</span>
           </div>
         </div>
       </section>
 
-      <!-- Pricing Section -->
-      <section class="pricing" id="pricing">
-        <h2>Pricing</h2>
-        <p class="pricing-intro">Choose your level of presence</p>
-        <div class="pricing-grid">
-          <div class="pricing-card">
-            <div class="pricing-icon basic">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-              </svg>
-            </div>
-            <h3>Basic Presence Plan</h3>
-            <p class="price">$20<span>/week</span></p>
-            <p class="coverage">Coverage: 3 badge scans per week</p>
-            <p class="ideal-for">Ideal for: Casual avoiders, part-time illusionists, and those who believe in moderation</p>
-            <div class="pricing-features">
-              <h4>Includes:</h4>
-              <ul>
-                <li>Standard badge scan at randomized times</li>
-              </ul>
-            </div>
-            <button class="pricing-cta">Select Plan</button>
+      <!-- HOW IT WORKS -->
+      <section class="band" id="how">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="eyebrow">The workflow</span>
+            <h2>Four steps to documented presence.</h2>
+            <p>A linear, auditable process. Each stage is handled by a trained professional and logged with timestamp precision.</p>
           </div>
-
-          <div class="pricing-card featured">
-            <div class="pricing-icon full">
-              <svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="0.5">
-                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-              </svg>
+          <div class="steps">
+            <div class="step reveal">
+              <span class="num">01</span>
+              <div class="ico">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="14" height="18" rx="2"/>
+                  <path d="M8 8h4M9.5 13v3"/>
+                  <path d="M17 9l4 2v6l-4 2"/>
+                </svg>
+              </div>
+              <h3>We collect your badge.</h3>
+              <p>A certified Attendance Engineer™ retrieves your badge from a pre-agreed secure location. No eye contact required. A firm handshake is available upon request.</p>
             </div>
-            <div class="featured-label">Most Popular</div>
-            <h3>Full Presence Plan</h3>
-            <p class="price">$30<span>/week</span></p>
-            <p class="coverage">Coverage: 5 badge scans per week</p>
-            <p class="ideal-for">Ideal for: Full-time remote workers who want full-time in-office optics</p>
-            <div class="pricing-features">
-              <h4>Includes everything in Basic, plus:</h4>
-              <ul>
-                <li>Daily badge scans with optional "arrival" and "departure" timestamps</li>
-              </ul>
+            <div class="step reveal">
+              <span class="num">02</span>
+              <div class="ico">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 13l2-5a2 2 0 0 1 1.9-1.3h10.2A2 2 0 0 1 19 8l2 5"/>
+                  <path d="M3 13h18v4a1 1 0 0 1-1 1h-1a2 2 0 0 1-4 0H9a2 2 0 0 1-4 0H4a1 1 0 0 1-1-1z"/>
+                  <circle cx="7.5" cy="16.5" r=".6"/>
+                  <circle cx="16.5" cy="16.5" r=".6"/>
+                </svg>
+              </div>
+              <h3>We drive to your workplace.</h3>
+              <p>Our CommuteAvoidanceML™ routing engine navigates traffic, construction, and the low-grade existential dread of being in a car at 8:47 a.m. on a Tuesday.</p>
             </div>
-            <button class="pricing-cta featured-cta">Select Plan</button>
-          </div>
-
-          <div class="pricing-card">
-            <div class="pricing-icon elite">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-              </svg>
+            <div class="step reveal">
+              <span class="num">03</span>
+              <div class="ico">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="6" width="18" height="12" rx="2"/>
+                  <path d="M7 10v4M12 10v4M16 10v4"/>
+                </svg>
+              </div>
+              <h3>We scan your badge.</h3>
+              <p>BadgeScanAI™ selects a statistically natural scan window. Your badge beeps. The reader blinks green. The system logs your "arrival." You are, technically, present.</p>
             </div>
-            <h3>Elite Presence+ Plan</h3>
-            <p class="price">$40<span>/week</span></p>
-            <p class="coverage">Coverage: 5 badge scans per week + simulated lunch breaks</p>
-            <p class="ideal-for">Ideal for: Power users, performance reviewers, and those who want to appear very present</p>
-            <div class="pricing-features">
-              <h4>Includes everything in Full, plus:</h4>
-              <ul>
-                <li>Midday badge scan to simulate lunch break return</li>
-              </ul>
+            <div class="step reveal">
+              <span class="num">04</span>
+              <div class="ico">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 11l8-7 8 7"/>
+                  <path d="M6 9.5V20h12V9.5"/>
+                  <path d="M10 20v-5h4v5"/>
+                </svg>
+              </div>
+              <h3>You stay home.</h3>
+              <p>Your badge complies with your RTO mandate. You don't have to. Everyone wins, except the open-plan office you were going to sit in anyway.</p>
             </div>
-            <button class="pricing-cta">Select Plan</button>
           </div>
         </div>
       </section>
 
-      <!-- Features Section -->
-      <section class="features">
-        <h2>Our Technology</h2>
+      <!-- PLATFORM / ARCHITECTURE -->
+      <section class="band alt" id="platform">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="eyebrow">The platform</span>
+            <h2>One beep. An absurd amount of infrastructure behind it.</h2>
+            <p>BadgeFor.Me is built on a multi-cloud architecture engineered to do exactly one thing — and document that it was done — without ever touching your employer's systems.</p>
+          </div>
 
-        <!-- Architecture Diagram -->
-        <div class="architecture-diagram">
-          <img src="assets/images/diagram.png" alt="BadgeFor.Me AI Architecture Diagram showing system components and cloud integrations" />
-        </div>
-
-        <!-- Feature Details Grid -->
-        <div class="features-grid">
-          <div class="feature">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path>
-              </svg>
+          <div class="arch reveal">
+            <div class="arch-head">
+              <span class="t"><b>BadgeFor.Me</b>&nbsp;/ system architecture</span>
+              <span class="v">v2.6 · region us-multi · status: nominal</span>
             </div>
-            <h3>PresenceGPT™</h3>
-            <p>A proprietary large language model trained exclusively on:</p>
-            <ul>
-              <li>HR attendance policies</li>
-              <li>Building access schedules</li>
-              <li>Historical badge‑reader congestion patterns</li>
-              <li>Weather data that may or may not matter</li>
-            </ul>
-            <p>It determines the optimal moment to perform a legitimate badge scan, nothing more.<br />No fake presence. No simulated activity. Just timing.</p>
-          </div>
-          <div class="feature">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
-                <circle cx="12" cy="13" r="4"></circle>
-              </svg>
+            <div class="arch-cols">
+              <div class="arch-col">
+                <div class="lbl"><b>01</b> Intake</div>
+                <div class="node">
+                  <div class="nt"><span class="d"></span>User Devices</div>
+                  <div class="nd">app · scheduling · receipts</div>
+                </div>
+                <div class="node muted">
+                  <div class="nt"><span class="d"></span>BadgeFor.Me Backend</div>
+                  <div class="nd">API · Auth · Database</div>
+                </div>
+                <div class="node">
+                  <div class="nt"><span class="d"></span>ScanFlow Orchestrator™</div>
+                  <div class="nd">pickup + engineer dispatch</div>
+                </div>
+              </div>
+              <div class="arch-col">
+                <div class="lbl"><b>02</b> Intelligence</div>
+                <div class="node">
+                  <div class="nt"><span class="d"></span>PresenceGPT™</div>
+                  <div class="nd">optimal-timing inference</div>
+                </div>
+                <div class="node">
+                  <div class="nt"><span class="d"></span>BadgeScanAI™</div>
+                  <div class="nd">computer vision · OCR</div>
+                </div>
+                <div class="node">
+                  <div class="nt"><span class="d"></span>CommuteAvoidanceML™</div>
+                  <div class="nd">route + traffic modeling</div>
+                </div>
+              </div>
+              <div class="arch-col">
+                <div class="lbl"><b>03</b> Execution</div>
+                <div class="node">
+                  <div class="nt"><span class="d"></span>GeoFaux™ Routing</div>
+                  <div class="nd">driver logistics only</div>
+                </div>
+                <div class="node">
+                  <div class="nt"><span class="d"></span>Physical Scan</div>
+                  <div class="nd">badge → reader → beep</div>
+                </div>
+                <div class="node muted">
+                  <div class="nt"><span class="d"></span>KV Store</div>
+                  <div class="nd">scan receipts · timestamps</div>
+                </div>
+              </div>
+              <div class="arch-col">
+                <div class="lbl"><b>04</b> Compliance</div>
+                <div class="node">
+                  <div class="nt"><span class="d"></span>EthicsBender™</div>
+                  <div class="nd">"this is still satire"</div>
+                </div>
+                <div class="node">
+                  <div class="nt"><span class="d"></span>Dashboard Neutralizer™</div>
+                  <div class="nd">zero employer interference</div>
+                </div>
+                <div class="node muted">
+                  <div class="nt"><span class="d"></span>Multi-Cloud</div>
+                  <div class="nd">GCP · Azure · AWS · DO</div>
+                </div>
+              </div>
             </div>
-            <h3>BadgeScanAI™</h3>
-            <p>A computer‑vision system engineered for one purpose:</p>
-            <ul>
-              <li>Identify your badge</li>
-              <li>Identify the badge reader</li>
-              <li>Identify the correct orientation for a clean, compliant scan</li>
-              <li>Randomize scan timing and building selection for natural variability</li>
-            </ul>
-            <p>It does exactly one thing: make the badge go beep.</p>
-          </div>
-          <div class="feature">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M9 11H3v2h6v-2zm0-4H3v2h6V7zm6 0v2h6V7h-6zm0 4v2h6v-2h-6zM9 3H3v2h6V3zm6 0v2h6V3h-6z"></path>
-              </svg>
-            </div>
-            <h3>CommuteAvoidanceML™</h3>
-            <p>A machine‑learning model that:</p>
-            <ul>
-              <li>Analyzes real‑time traffic</li>
-              <li>Predicts construction delays</li>
-              <li>Avoids parking nightmares</li>
-              <li>Optimizes driver routes for maximum efficiency</li>
-            </ul>
-            <p>It ensures our highly trained drivers get to your workplace quickly, safely, and without existential regret.</p>
-          </div>
-          <div class="feature">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-                <circle cx="12" cy="10" r="3"></circle>
-              </svg>
-            </div>
-            <h3>GeoFaux™ Routing Engine</h3>
-            <p><em>Not for spoofing location — for driver logistics only.</em></p>
-            <ul>
-              <li>Calculates the fastest path between badge pickup and workplace</li>
-              <li>Avoids suspicious patterns like identical arrival times</li>
-              <li>Ensures badge scans occur in realistic, human‑like intervals</li>
-            </ul>
-            <p>It's geospatial intelligence for the world's most literal task.</p>
-          </div>
-          <div class="feature">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-              </svg>
-            </div>
-            <h3>EthicsBender™</h3>
-            <p>A neural network dedicated to internal compliance sanity checks:</p>
-            <ul>
-              <li>Flags any process that might resemble "presence simulation"</li>
-              <li>Ensures all operations remain strictly badge‑scan‑only</li>
-              <li>Provides automated reminders like "Don't do crimes"</li>
-            </ul>
-            <p>It bends ethics just enough to be funny, never enough to be actionable.</p>
-          </div>
-          <div class="feature">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"></circle>
-                <path d="M12 6v6l4 2"></path>
-              </svg>
-            </div>
-            <h3>ScanFlow Orchestrator™</h3>
-            <p>A high‑availability coordination layer that:</p>
-            <ul>
-              <li>Schedules badge pickups</li>
-              <li>Assigns drivers</li>
-              <li>Routes badges</li>
-              <li>Executes scan sequences</li>
-              <li>Logs successful scans with timestamp precision</li>
-            </ul>
-            <p>No fake pings. No dashboard manipulation.<br />Just a beautifully over‑engineered system for a single beep.</p>
-          </div>
-          <div class="feature">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                <line x1="9" y1="9" x2="15" y2="9"></line>
-                <line x1="9" y1="15" x2="15" y2="15"></line>
-              </svg>
-            </div>
-            <h3>The Dashboard Neutralizer™</h3>
-            <p>A final safeguard ensuring we never interfere with employer dashboards.</p>
-            <ul>
-              <li>No activity generation</li>
-              <li>No message simulation</li>
-              <li>No presence fabrication</li>
-              <li>No data injection</li>
-            </ul>
-            <p>It guarantees that the only signal your employer receives is the real badge scan performed by our driver.</p>
           </div>
         </div>
       </section>
 
-      <!-- FAQ Section -->
-      <section class="faq">
-        <h2>Frequently Asked Questions</h2>
-        <div class="faq-grid">
-          <div class="faq-item">
-            <h3 class="faq-question">What exactly does BadgeFor.Me do?</h3>
-            <div class="faq-answer">
-              <p>
-                We collect your physical work badge, drive it to your workplace, and scan it on your behalf. That's it. No fake activity, no digital trickery, no Slack messages typed by robots. Just a highly trained human performing a single beep.
-              </p>
+      <!-- TECHNOLOGY FEATURES -->
+      <section class="band">
+        <div class="wrap">
+          <div class="sec-head">
+            <span class="eyebrow">Our technology</span>
+            <h2>Purpose-built systems for a single, honest beep.</h2>
+            <p>No fake presence. No simulated activity. Every component below exists to make one badge scan look exactly as routine as it should.</p>
+          </div>
+          <div class="feat-grid">
+            <div class="feat reveal">
+              <div class="ico">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9"/>
+                  <path d="M8 12l2.5 2.5L16 9"/>
+                </svg>
+              </div>
+              <h3>PresenceGPT<sup>™</sup></h3>
+              <p>A proprietary large language model trained on HR attendance policy documents, building access schedules, and historical badge-reader congestion data. It determines the statistically optimal moment to perform a scan — not too early, not too late, suspiciously on time.</p>
+              <p class="tail">No fake presence. No simulated activity. Just timing.</p>
+            </div>
+            <div class="feat reveal">
+              <div class="ico">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="6" width="18" height="13" rx="2"/>
+                  <circle cx="12" cy="12.5" r="3"/>
+                  <path d="M8 6l1.2-2h5.6L16 6"/>
+                </svg>
+              </div>
+              <h3>BadgeScanAI<sup>™</sup></h3>
+              <p>A computer-vision system engineered for one purpose: identify the badge, identify the reader, identify the correct orientation for a clean scan. It randomizes timing and building selection to ensure natural variability across your weekly scan cadence.</p>
+              <p class="tail">It does exactly one thing. It does that one thing very well.</p>
+            </div>
+            <div class="feat reveal">
+              <div class="ico">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 17h2l2-5a2 2 0 0 1 1.9-1.3h6.2A2 2 0 0 1 19 12l2 5"/>
+                  <circle cx="7.5" cy="17.5" r="1.6"/>
+                  <circle cx="16.5" cy="17.5" r="1.6"/>
+                </svg>
+              </div>
+              <h3>CommuteAvoidanceML<sup>™</sup></h3>
+              <p>A machine-learning model that analyzes real-time traffic, predicts construction delays, and optimizes driver routes so your Attendance Engineer arrives on time — without the parking garage standoff or the spiral of wondering if any of this is real.</p>
+            </div>
+            <div class="feat reveal">
+              <div class="ico">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 21s7-5.2 7-11a7 7 0 1 0-14 0c0 5.8 7 11 7 11z"/>
+                  <circle cx="12" cy="10" r="2.4"/>
+                </svg>
+              </div>
+              <h3>GeoFaux<sup>™</sup> Routing</h3>
+              <p>Not for location spoofing — for driver logistics. Calculates the fastest path between badge pickup and workplace, avoids suspicious patterns like identical arrival times, and ensures scan intervals look exactly like those of a real person who definitely could have taken the elevator.</p>
+            </div>
+            <div class="feat reveal">
+              <div class="ico">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6z"/>
+                  <path d="M9 12l2 2 4-4"/>
+                </svg>
+              </div>
+              <h3>EthicsBender<sup>™</sup></h3>
+              <p>A neural network dedicated to internal compliance review. It flags any process that resembles presence simulation, ensures all operations remain strictly badge-scan-only, and surfaces automated reminders at key moments — including "Don't do crimes" and "This is still satire."</p>
+            </div>
+            <div class="feat reveal">
+              <div class="ico">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9"/>
+                  <path d="M12 7v5l3.5 2"/>
+                </svg>
+              </div>
+              <h3>ScanFlow Orchestrator<sup>™</sup></h3>
+              <p>The coordination layer that schedules badge pickups, assigns Attendance Engineers, sequences scan operations, and logs each successful beep with timestamp precision.</p>
+              <p class="tail">No fake pings. No dashboard manipulation. Just a beautifully over-engineered system for a single beep.</p>
             </div>
           </div>
 
-          <div class="faq-item">
-            <h3 class="faq-question">Do I need to be home when you pick up my badge?</h3>
-            <div class="faq-answer">
-              <p>No. You may leave your badge in a secure, pre‑agreed location. Our drivers are trained in discreet retrieval, including mailbox extraction, porch pickup, and the classic "under the doormat" maneuver.</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <h3 class="faq-question">Who are your drivers?</h3>
-            <div class="faq-answer">
-              <p>Our drivers are elite professionals trained in:</p>
-              <ul>
-                <li>Badge handling</li>
-                <li>Traffic navigation</li>
-                <li>Avoiding eye contact with building security</li>
-                <li>Maintaining plausible professionalism at all times</li>
-              </ul>
-              <p>They are the backbone of our operation and the heroes your commute never deserved.</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <h3 class="faq-question">How do you decide when to scan my badge?</h3>
-            <div class="faq-answer">
-              <p>
-                Our AI systems—PresenceGPT™ and BadgeScanAI™—analyze building access patterns, historical scan times, and traffic conditions to determine a natural, human‑like scan window.<br /><strong>No two scans are ever identical.</strong
-                ><br />Just like real attendance.
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <h3 class="faq-question">Do you scan into multiple buildings?</h3>
-            <div class="faq-answer">
-              <p>Yes. Our AI may occasionally choose a different building within your campus to maintain realistic variability. This is normal. This is intentional. This is science.</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <h3 class="faq-question">Do you ever simulate work activity?</h3>
-            <div class="faq-answer">
-              <p><strong>Absolutely not.</strong></p>
-              <p>We do not:</p>
-              <ul>
-                <li>Send Slack messages</li>
-                <li>Generate keystrokes</li>
-                <li>Fake mouse movement</li>
-                <li>Manipulate dashboards</li>
-                <li>Fabricate presence data</li>
-              </ul>
-              <p>We only perform real badge scans using your real badge at your real workplace.</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <h3 class="faq-question">Is this legal?</h3>
-            <div class="faq-answer">
-              <p>
-                We operate strictly within the boundaries of satire, comedy, and conceptual art.<br />Also, we never impersonate you digitally or access your employer's systems.<br />We just scan a badge.<br />A badge that beeps.<br />A beep that
-                means nothing more than "a badge was scanned."
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <h3 class="faq-question">What if my employer asks why I wasn't physically present?</h3>
-            <div class="faq-answer">
-              <p>We recommend responding with confidence, ambiguity, or a question of your own.<br />Examples include:</p>
-              <ul>
-                <li>"Interesting."</li>
-                <li>"What makes you say that."</li>
-                <li>"I was in the building you weren't in."</li>
-                <li>"Have you considered the metaphysics of presence."</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <h3 class="faq-question">What happens if my badge is lost or damaged?</h3>
-            <div class="faq-answer">
-              <p>We will return a badge‑shaped object to you.<br />It may or may not be your original badge.<br />It will definitely be badge‑shaped.</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <h3 class="faq-question">Can I cancel anytime?</h3>
-            <div class="faq-answer">
-              <p>Yes. Simply notify us, and we will return your badge to its natural habitat.</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <h3 class="faq-question">Do you offer corporate plans?</h3>
-            <div class="faq-answer">
-              <p>We are exploring enterprise solutions for teams, departments, and entire divisions who wish to appear present in unison.<br />This is known internally as "The Green Wall."</p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <h3 class="faq-question">Is this… satire?</h3>
-            <div class="faq-answer">
-              <p><strong>Yes.</strong></p>
-              <p>
-                BadgeFor.Me is a satirical project that parodies corporate attendance culture, presenteeism, and the absurdity of modern workplace expectations.<br /><strong
-                  >No actual badge scanning services are provided.<br />No fraud is committed.<br />Only jokes are made.</strong
-                >
-              </p>
+          <!-- Dashboard Neutralizer — highlighted full-width card -->
+          <div class="feat reveal" style="margin-top:20px;border-color:var(--accent-line);background:var(--accent-wash)">
+            <div style="display:grid;grid-template-columns:38px 1fr;gap:18px;align-items:start">
+              <div class="ico" style="margin:0">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="14" rx="2"/>
+                  <path d="M3 9h18M8 14h5"/>
+                </svg>
+              </div>
+              <div>
+                <h3>Dashboard Neutralizer<sup>™</sup></h3>
+                <p style="max-width:74ch">A final safeguard ensuring we never interfere with employer systems. No activity generation, no message simulation, no presence fabrication, no data injection of any kind. The only signal your employer receives is the one produced by your real badge touching a real reader.</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- PRICING -->
+      <section class="band alt" id="pricing">
+        <div class="wrap">
+          <div class="sec-head center">
+            <span class="eyebrow">Pricing</span>
+            <h2>Choose your level of compliance.</h2>
+            <p>Transparent, per-scan pricing. Cancel anytime — we'll return your badge to its natural habitat.</p>
+            <div class="toggle" id="billToggle" style="display:flex">
+              <span class="knob" id="knob"></span>
+              <button class="on" data-mode="weekly">Weekly</button>
+              <button data-mode="annual">Annual <span class="save">2 wks free</span></button>
+            </div>
+          </div>
+
+          <div class="prices">
+            <div class="plan reveal">
+              <h3>Minimal Compliance</h3>
+              <div class="price">
+                <span class="amt" data-w="$20" data-a="$1,000">$20</span>
+                <span class="per" data-w="/week" data-a="/year">/week</span>
+              </div>
+              <div class="scans">3 badge scans per week</div>
+              <p class="ideal">Ideal for: Casual avoiders, hybrid skeptics, and anyone whose manager checks the logs on Fridays.</p>
+              <div class="inc">Includes</div>
+              <ul>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 7"/></svg>
+                  Standard badge scan at randomized times
+                </li>
+              </ul>
+              <a class="btn btn-ghost" href="#">Select plan</a>
+            </div>
+
+            <div class="plan pop reveal">
+              <span class="tag">Most popular</span>
+              <h3>Full Compliance</h3>
+              <div class="price">
+                <span class="amt" data-w="$30" data-a="$1,500">$30</span>
+                <span class="per" data-w="/week" data-a="/year">/week</span>
+              </div>
+              <div class="scans">5 badge scans per week</div>
+              <p class="ideal">Ideal for: Full-time remote workers under a full-time RTO mandate.</p>
+              <div class="inc">Everything in Minimal, plus</div>
+              <ul>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 7"/></svg>
+                  Daily badge scans with optional "arrival" and "departure" timestamps
+                </li>
+              </ul>
+              <a class="btn btn-primary" href="#">Select plan</a>
+            </div>
+
+            <div class="plan reveal">
+              <h3>Executive Presence</h3>
+              <div class="price">
+                <span class="amt" data-w="$40" data-a="$2,000">$40</span>
+                <span class="per" data-w="/week" data-a="/year">/week</span>
+              </div>
+              <div class="scans">5 scans per week + simulated lunch breaks</div>
+              <p class="ideal">Ideal for: Power users, performance review season, and anyone whose skip-level asks where they've been.</p>
+              <div class="inc">Everything in Full, plus</div>
+              <ul>
+                <li>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l4 4L19 7"/></svg>
+                  Midday badge scan to simulate lunch break return
+                </li>
+              </ul>
+              <a class="btn btn-ghost" href="#">Select plan</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="band" id="faq">
+        <div class="wrap" style="max-width:840px">
+          <div class="sec-head center">
+            <span class="eyebrow">Frequently asked questions</span>
+            <h2>Everything, answered plainly.</h2>
+          </div>
+          <div class="faq-wrap" id="faqList"></div>
+        </div>
+      </section>
+
+      <!-- FINAL CTA -->
+      <section class="cta-band">
+        <div class="wrap">
+          <span class="eyebrow">Get started</span>
+          <h2 style="margin-top:14px">Be present. Remain home.</h2>
+          <p>Documented attendance for people who have somewhere better to be — namely, anywhere else.</p>
+          <div class="hero-cta" style="justify-content:center;margin-top:30px">
+            <a class="btn btn-primary btn-lg" href="#pricing">Choose a plan</a>
+            <a class="btn btn-ghost btn-lg" href="#faq">Read the FAQ</a>
+          </div>
+        </div>
+      </section>
+
     </main>
 
+    <!-- FOOTER -->
     <footer>
-      <div class="footer-content">
-        <div class="footer-section">
-          <h4>BadgeFor.Me</h4>
-          <p>Making presenteeism hilarious since 2026.</p>
+      <div class="wrap">
+        <div class="foot-grid">
+          <div>
+            <a class="brand" href="#top">
+              <span class="mark">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <rect x="6" y="3" width="12" height="16" rx="2" stroke="#fff" stroke-width="2"/>
+                  <path d="M9 8h6M12 13.5v2" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </span>
+              BadgeFor.Me
+            </a>
+            <p class="since">Presence-as-a-Service™ since 2026.</p>
+          </div>
+          <div class="foot-col">
+            <h4>Quick links</h4>
+            <a href="#pricing">Pricing</a>
+            <a href="#how">How it works</a>
+            <a href="#faq">FAQ</a>
+          </div>
+          <div class="foot-col">
+            <h4>Legal</h4>
+            <p><b>Disclaimer:</b> BadgeFor.Me is a satirical art project. No actual badge scanning services are provided. This is art, not a business.</p>
+          </div>
         </div>
-        <div class="footer-section">
-          <h4>Quick Links</h4>
-          <ul>
-            <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#how-it-works">How It Works</a></li>
-            <li><a href="#faq">FAQ</a></li>
-          </ul>
+        <div class="foot-bottom">
+          <span>&copy; 2026 Badge For Me. All rights reserved.</span>
+          <span>this is still satire</span>
         </div>
-        <div class="footer-section">
-          <h4>Legal</h4>
-          <p class="disclaimer"><strong>Disclaimer:</strong> BadgeFor.Me is a satirical project. No actual badge scanning services are provided. This is art, not a business.</p>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Badge For Me. All rights reserved.</p>
       </div>
     </footer>
 
