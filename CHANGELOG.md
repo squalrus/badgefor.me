@@ -8,6 +8,7 @@ User-visible changes, newest first. Follows [Keep a Changelog](https://keepachan
 
 - **Branded Open Graph image.** Replaced the stock badge-scan photo with a purpose-built 1200×630 OG image: dark corporate-blue background, "BadgeFor.Me" wordmark, "Presence-as-a-Service™" eyebrow, tagline, and a "Starting at $20 / week" pricing pill. Source template kept at `assets/og-template.html` for future regeneration. (`assets/images/og-image.png`, `assets/og-template.html`, `index.html`)
 - **CONTRIBUTING.md.** New contributor guide covering local setup, project structure, design system tokens, deployment pipeline, and OG image regeneration steps. (`CONTRIBUTING.md`)
+- **Footer version.** Version number now displayed in the site footer and kept in sync with each release. (`index.html`)
 
 ### Changed
 

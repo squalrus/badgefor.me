@@ -22,13 +22,15 @@ Single-page static site. All content lives in [index.html](index.html).
 
 - [css/styles.css](css/styles.css) — all styling via CSS custom properties; no preprocessor
 - [js/main.js](js/main.js) — FAQ accordion (`<details>` + animated `max-height`), pricing toggle (animated knob), scroll reveals (`IntersectionObserver`)
-- [assets/images/](assets/images/) — static images (hero image); architecture diagram is now code-rendered, not an image
+- [assets/images/](assets/images/) — static images; architecture diagram is code-rendered, not an image
 
 The FAQ accordion drives `max-height` on `.ans` based on `.qa[open]` state. The pricing toggle swaps `.amt`/`.per` text content from `data-w`/`data-a` attributes.
 
 ## Version tracking
 
 Version is derived from CHANGELOG.md — the latest `## [X.Y.Z]` heading is the current version. No separate version file is maintained.
+
+The footer in `index.html` displays the version as a `<span>` in `.foot-bottom` (e.g. `<span>v0.2.1</span>`). **Update this span on every release** to match the new version.
 
 ## Design System
 
