@@ -2,6 +2,21 @@
 
 User-visible changes, newest first. Follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format and [semver](https://semver.org/) versioning.
 
+## [0.2.1] — 2026-06-09
+
+### Added
+
+- **Branded Open Graph image.** Replaced the stock badge-scan photo with a purpose-built 1200×630 OG image: dark corporate-blue background, "BadgeFor.Me" wordmark, "Presence-as-a-Service™" eyebrow, tagline, and a "Starting at $20 / week" pricing pill. Source template kept at `assets/og-template.html` for future regeneration. (`assets/images/og-image.png`, `assets/og-template.html`, `index.html`)
+- **CONTRIBUTING.md.** New contributor guide covering local setup, project structure, design system tokens, deployment pipeline, and OG image regeneration steps. (`CONTRIBUTING.md`)
+
+### Changed
+
+- **README.md.** Rewritten as a lean project overview (what it is, live link, pricing table, pointer to CONTRIBUTING.md) — removed the stale dark-theme description, incorrect deployment notes, and outdated file tree. (`README.md`)
+
+### Removed
+
+- **Unused images.** Deleted `assets/images/hero-badge-scan.jpg` (replaced by `og-image.png`) and `assets/images/diagram.png` (architecture diagram has been code-rendered since v0.1.0).
+
 ## [0.2.0] — 2026-06-09
 
 ### Added
