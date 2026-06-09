@@ -2,6 +2,12 @@
 
 User-visible changes, newest first. Follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format and [semver](https://semver.org/) versioning.
 
+## [0.1.1] — 2026-06-09
+
+### Fixed
+
+- **Pricing toggle width.** Removed an inline `style="display:flex"` that was overriding the CSS `display: inline-flex`, causing the Weekly/Annual toggle pill to stretch full-width. (`index.html`)
+
 ## [0.1.0] — 2026-06-09
 
 ### Changed
