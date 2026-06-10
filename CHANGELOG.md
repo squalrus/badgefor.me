@@ -2,6 +2,18 @@
 
 User-visible changes, newest first. Follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format and [semver](https://semver.org/) versioning.
 
+## [0.2.3] — 2026-06-10
+
+### Added
+
+- **`robots.txt` and `sitemap.xml`.** New root-level files allowing all crawlers and pointing to the sitemap, which lists the homepage. (`robots.txt`, `sitemap.xml`)
+- **FAQPage structured data.** The FAQ accordion now also emits `FAQPage` JSON-LD (generated from the same `faqs` array, so there's one source of truth), surfacing the satirical Q&A — including RTO-mandate-adjacent questions like "Is this legal?" and "What if my employer asks why I wasn't physically present?" — to search engines. (`js/main.js`)
+
+### Changed
+
+- **SEO meta tags retargeted at "return to office" search intent.** Title and meta description now lead with "return-to-office mandate" instead of the abbreviation "RTO"; expanded `keywords` with more long-tail RTO phrases; OG/Twitter descriptions spell out "return-to-office (RTO)"; added explicit `robots: index, follow` and `og:locale`. (`index.html`)
+- **Fixed invalid `WebSite` JSON-LD.** Removed a `SearchAction` that pointed at `#pricing` without a valid URL template or `query-input`, which could trigger Search Console structured-data errors. (`index.html`)
+
 ## [0.2.2] — 2026-06-10
 
 ### Changed
