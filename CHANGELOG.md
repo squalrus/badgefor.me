@@ -2,6 +2,12 @@
 
 User-visible changes, newest first. Follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format and [semver](https://semver.org/) versioning.
 
+## [0.2.2] — 2026-06-10
+
+### Changed
+
+- **CTA and "buy" links now point to squalr.us.** "Sign in" and the three pricing-card "Select plan" buttons (Minimal Compliance, Full Compliance, Executive Presence) were placeholder `#` links — they now point to [squalr.us](https://squalr.us), opening in a new tab. (`index.html`)
+
 ## [0.2.1] — 2026-06-09
 
 ### Added
