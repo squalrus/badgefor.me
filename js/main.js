@@ -34,6 +34,20 @@ document.addEventListener('DOMContentLoaded', function () {
     const first = list.querySelector('.qa');
     if (first) { first.open = true; syncFaq(); }
     window.addEventListener('resize', syncFaq);
+
+    // FAQPage structured data, mirrored from the same source as the accordion
+    const faqSchema = document.createElement('script');
+    faqSchema.type = 'application/ld+json';
+    faqSchema.textContent = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: faqs.map(([name, text]) => ({
+        '@type': 'Question',
+        name,
+        acceptedAnswer: { '@type': 'Answer', text }
+      }))
+    });
+    document.head.appendChild(faqSchema);
   }
 
   // Pricing toggle

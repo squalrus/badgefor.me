@@ -10,11 +10,13 @@ Open `index.html` directly in a browser. No server, no build step, no package ma
 badgefor.me/
 ├── index.html              # All content lives here
 ├── css/styles.css          # Styling via CSS custom properties; light theme
-├── js/main.js              # FAQ accordion, pricing toggle, scroll reveals
+├── js/main.js              # FAQ accordion (+ FAQPage JSON-LD), pricing toggle, scroll reveals
 ├── assets/
 │   ├── images/og-image.png # Open Graph image (1200×630)
 │   └── og-template.html    # Source HTML for regenerating og-image.png
 ├── favicon.svg
+├── robots.txt              # Crawler rules + sitemap pointer
+├── sitemap.xml             # Sitemap for search engines
 └── CHANGELOG.md            # Source of truth for version number
 ```
 
