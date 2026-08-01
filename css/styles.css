@@ -4,7 +4,7 @@
   --paper-3: oklch(0.972 0.004 256);
   --ink: oklch(0.24 0.014 262);
   --ink-2: oklch(0.46 0.014 262);
-  --ink-3: oklch(0.6 0.012 262);
+  --ink-3: oklch(0.55 0.012 262);
   --line: oklch(0.915 0.006 262);
   --line-2: oklch(0.95 0.005 262);
   --accent: oklch(0.55 0.16 258);
@@ -75,11 +75,41 @@ h1, h2, h3 { letter-spacing: -0.025em; line-height: 1.05; font-weight: 700; }
 .btn-ghost:hover { border-color: var(--ink-3); background: var(--paper-2); }
 .btn-lg { padding: 14px 24px; font-size: 15px; }
 
+/* ---------- suite bar ---------- */
+/* Kept pixel-identical to squish.dev's suite bar (same repo pattern) except
+   the squalr.us brand color, which is the one thing allowed to vary per site. */
+.site-topstack { position: sticky; top: 0; z-index: 50; }
+.suite-bar { background: #0C0E11; border-bottom: 1px solid #262A30; }
+.suite-bar-in {
+  display: flex; align-items: center; justify-content: space-between; gap: 16px;
+  height: 34px;
+  font-family: 'JetBrains Mono', monospace; font-size: 12px;
+}
+.suite-bar-brand {
+  display: flex; align-items: center; gap: 8px;
+  color: oklch(0.71 0.09 258); text-decoration: none; font-weight: 500;
+  white-space: nowrap; overflow: hidden;
+}
+.suite-bar-brand:hover { color: #fff; }
+.suite-bar-mark {
+  flex: none; width: 18px; height: 18px; border-radius: 5px;
+  background: oklch(0.71 0.09 258); color: #0C0E11;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 9px; font-weight: 700;
+}
+.suite-bar-desc { color: #787C83; }
+.suite-bar-links { display: flex; align-items: center; gap: 10px; white-space: nowrap; }
+.suite-bar-links a { color: #787C83; text-decoration: none; transition: color .15s ease; }
+.suite-bar-links a:hover { color: oklch(0.71 0.09 258); }
+.suite-bar-current { color: #fff; font-weight: 600; }
+.suite-bar-soon { color: #787C83; }
+.suite-bar-dot { color: #787C83; }
+@media (max-width: 560px) {
+  .suite-bar-desc, .suite-bar-soon { display: none; }
+}
+
 /* ---------- nav ---------- */
 header.nav {
-  position: sticky;
-  top: 0;
-  z-index: 50;
   background: color-mix(in oklch, var(--paper) 86%, transparent);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line);

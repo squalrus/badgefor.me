@@ -40,6 +40,9 @@
     }
     </script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
 
@@ -54,30 +57,48 @@
 
   <body>
 
-    <!-- NAV -->
-    <header class="nav">
-      <div class="wrap nav-in">
-        <a class="brand" href="#top">
-          <span class="mark">
-            <svg viewBox="0 0 24 24" fill="none">
-              <rect x="6" y="3" width="12" height="16" rx="2" stroke="#fff" stroke-width="2"/>
-              <path d="M9 8h6M12 13.5v2" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-            </svg>
-          </span>
-          BadgeFor.Me
-        </a>
-        <nav class="nav-links">
-          <a href="#how">How it works</a>
-          <a href="#platform">Platform</a>
-          <a href="#pricing">Pricing</a>
-          <a href="#faq">FAQ</a>
-        </nav>
-        <div class="nav-cta">
-          <a class="btn btn-ghost" href="https://squalr.us" target="_blank" rel="noopener">Sign in</a>
-          <a class="btn btn-primary" href="#pricing">Get started</a>
+    <div class="site-topstack">
+      <div class="suite-bar">
+        <div class="wrap suite-bar-in">
+          <a class="suite-bar-brand" href="https://squalr.us/" target="_blank" rel="noopener">
+            <span class="suite-bar-mark">sq</span>
+            <span>SQUALR.US <span class="suite-bar-desc">&mdash; a modern tech productivity suite</span></span>
+          </a>
+          <div class="suite-bar-links">
+            <a href="https://shrnkr.dev/" target="_blank" rel="noopener">shrnkr</a>
+            <span class="suite-bar-dot">&middot;</span>
+            <span class="suite-bar-current">badgefor.me</span>
+            <span class="suite-bar-dot">&middot;</span>
+            <span class="suite-bar-soon">+ more soon</span>
+          </div>
         </div>
       </div>
-    </header>
+
+      <!-- NAV -->
+      <header class="nav">
+        <div class="wrap nav-in">
+          <a class="brand" href="#top">
+            <span class="mark">
+              <svg viewBox="0 0 24 24" fill="none">
+                <rect x="6" y="3" width="12" height="16" rx="2" stroke="#fff" stroke-width="2"/>
+                <path d="M9 8h6M12 13.5v2" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </span>
+            BadgeFor.Me
+          </a>
+          <nav class="nav-links">
+            <a href="#how">How it works</a>
+            <a href="#platform">Platform</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#faq">FAQ</a>
+          </nav>
+          <div class="nav-cta">
+            <a class="btn btn-ghost" href="https://squalr.us" target="_blank" rel="noopener">Sign in</a>
+            <a class="btn btn-primary" href="#pricing">Get started</a>
+          </div>
+        </div>
+      </header>
+    </div>
 
     <main id="top">
 
@@ -520,7 +541,7 @@
           <span>&copy; 2026 Badge For Me. All rights reserved.</span>
           <span>this is still satire</span>
           <span>Built by <a href="https://squalr.us" target="_blank" rel="noopener">Chad Schulz</a></span>
-          <span>v0.2.3</span>
+          <span>v0.3.0</span>
         </div>
       </div>
     </footer>

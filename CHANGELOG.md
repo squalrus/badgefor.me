@@ -2,6 +2,17 @@
 
 User-visible changes, newest first. Follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) format and [semver](https://semver.org/) versioning.
 
+## [0.3.0] — 2026-07-31
+
+### Added
+
+- **Suite bar.** A dark sticky bar above the main nav links BadgeFor.Me to the rest of the squalr.us product suite (shrnkr.dev, "+ more soon"), matching the shared suite-bar pattern used across squalr.us sites with the site's accent color substituted in. Pulls in the JetBrains Mono webfont via preconnected Google Fonts links. (`index.html`, `css/styles.css`)
+
+### Changed
+
+- **`--ink-3` darkened slightly.** `oklch(0.6 0.012 262)` → `oklch(0.55 0.012 262)` for better contrast. (`css/styles.css`)
+- **Nav bar is no longer independently sticky.** The main nav now sits inside the sticky `.site-topstack` wrapper alongside the new suite bar rather than being sticky on its own. (`css/styles.css`)
+
 ## [0.2.3] — 2026-06-10
 
 ### Added
